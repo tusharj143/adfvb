@@ -1,0 +1,25 @@
+{
+	"name": "Event_trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "cp_event_trigger",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/snowflake/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/a3ff4715-a960-43bb-b22d-96a8b7a2a81d/resourceGroups/rg_dev_b9_etl/providers/Microsoft.Storage/storageAccounts/sablobsnowvb",
+			"events": [
+				"Microsoft.Storage.BlobCreated",
+				"Microsoft.Storage.BlobDeleted"
+			]
+		}
+	}
+}

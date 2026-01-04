@@ -1,0 +1,35 @@
+{
+	"name": "ds_sql_pq2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sql_pq",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "seller_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "seller_zip_code_prefix",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "seller_city",
+				"type": "nvarchar"
+			},
+			{
+				"name": "seller_state",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "olist_sellers_dataset"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,55 @@
+{
+	"name": "ds_sql_pq",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sql_pq",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "order_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "customer_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "order_status",
+				"type": "nvarchar"
+			},
+			{
+				"name": "order_purchase_timestamp",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "order_approved_at",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "order_delivered_carrier_date",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "order_delivered_customer_date",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "order_estimated_delivery_date",
+				"type": "datetime2",
+				"scale": 7
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "olist_orders_dataset"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

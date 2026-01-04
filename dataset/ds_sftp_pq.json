@@ -1,0 +1,45 @@
+{
+	"name": "ds_sftp_pq",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sftp_pq",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "SftpLocation",
+				"fileName": "olist_customers_dataset.csv",
+				"folderPath": "/olist_customers"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "customer_id",
+				"type": "String"
+			},
+			{
+				"name": "customer_unique_id",
+				"type": "String"
+			},
+			{
+				"name": "customer_zip_code_prefix",
+				"type": "String"
+			},
+			{
+				"name": "customer_city",
+				"type": "String"
+			},
+			{
+				"name": "customer_state",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

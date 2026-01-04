@@ -1,0 +1,22 @@
+{
+	"name": "ds_blob_event_src",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_csv_adlssrc",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "olist_order_items_dataset",
+				"folderPath": "snow",
+				"fileSystem": "output"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
