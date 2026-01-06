@@ -10,8 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "olist_order_items_dataset",
-				"folderPath": "snow",
+				"folderPath": "@concat( 'snow/', formatDateTime(utcNow(),'yyyy'),'/', formatDateTime(utcNow(),'MM'),'/', formatDateTime(utcNow(),'dd') )",
 				"fileSystem": "output"
 			},
 			"compressionCodec": "snappy"
