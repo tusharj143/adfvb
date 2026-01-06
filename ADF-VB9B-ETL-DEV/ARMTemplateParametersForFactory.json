@@ -1,0 +1,72 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ADF-VB9B-ETL-DEV"
+		},
+		"LS_AZSQL_DB_password": {
+			"value": ""
+		},
+		"ls_blob_event_connectionString": {
+			"value": ""
+		},
+		"ls_csv_adlsraw_accountKey": {
+			"value": ""
+		},
+		"ls_csv_adlssrc_accountKey": {
+			"value": ""
+		},
+		"ls_sftp_pq_password": {
+			"value": ""
+		},
+		"ls_snow_pq_password": {
+			"value": ""
+		},
+		"ls_sql_pq_password": {
+			"value": ""
+		},
+		"LS_AZSQL_DB_properties_typeProperties_server": {
+			"value": "sql-servr-vb-dev.database.windows.net"
+		},
+		"LS_AZSQL_DB_properties_typeProperties_database": {
+			"value": "sql-db-vb-dev"
+		},
+		"LS_AZSQL_DB_properties_typeProperties_userName": {
+			"value": "adminvb"
+		},
+		"ls_csv_adlsraw_properties_typeProperties_url": {
+			"value": "https://adlsdevvisionboardraw1.dfs.core.windows.net/"
+		},
+		"ls_csv_adlssrc_properties_typeProperties_url": {
+			"value": "https://adlsdevvbsource001.dfs.core.windows.net/"
+		},
+		"ls_rest_properties_typeProperties_url": {
+			"value": "https://retoolapi.dev"
+		},
+		"ls_sftp_pq_properties_typeProperties_host": {
+			"value": "adlsdevvisionboardraw1.blob.core.windows.net"
+		},
+		"ls_sftp_pq_properties_typeProperties_userName": {
+			"value": "adlsdevvisionboardraw1.sftpuser"
+		},
+		"ls_snow_pq_properties_typeProperties_database": {
+			"value": "DBAZURESNOW"
+		},
+		"ls_snow_pq_src_sasUri": {
+			"value": ""
+		},
+		"ls_sql_pq_properties_typeProperties_server": {
+			"value": "sql-servr-vb-dev.database.windows.net"
+		},
+		"ls_sql_pq_properties_typeProperties_database": {
+			"value": "sql-db-vb-dev"
+		},
+		"ls_sql_pq_properties_typeProperties_userName": {
+			"value": "adminvb"
+		},
+		"Event_trigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/a3ff4715-a960-43bb-b22d-96a8b7a2a81d/resourceGroups/rg_dev_b9_etl/providers/Microsoft.Storage/storageAccounts/sablobsnowvb"
+		}
+	}
+}
