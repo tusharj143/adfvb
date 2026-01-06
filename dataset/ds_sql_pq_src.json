@@ -11,7 +11,7 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"folderPath": {
-					"value": "@concat(\n'snow/',\nformatDateTime(utcNow(),'yyyy'),'/',\nformatDateTime(utcNow(),'mm'),'/',\nformatDateTime(utcNow(),'dd')\n)",
+					"value": "@concat(\n'snow/',\nformatDateTime(utcNow(),'yyyy'),'/',\nformatDateTime(utcNow(),'MM'),'/',\nformatDateTime(utcNow(),'dd')\n)",
 					"type": "Expression"
 				},
 				"container": "snowflake"
