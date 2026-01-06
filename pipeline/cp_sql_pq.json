@@ -344,10 +344,7 @@
 					"storedProcedureName": "[dbo].[vb_end_log_entry]",
 					"storedProcedureParameters": {
 						"error": {
-							"value": {
-								"value": "@activity('cp_sql_pq').error.message\n@activity('cp_sql_pq1').error.message\n@activity('cp_sql_pq2').error.message",
-								"type": "Expression"
-							},
+							"value": null,
 							"type": "String"
 						},
 						"jobid": {
